@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pay bill.css">
+    <title>Electricity Bill Payment</title>
+    
+</head>
+<body>
+
+    <header>
+        <label class="logo">E-BILLING SYSTEM</label>
+    </header>
+
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="view profile.html">View Profile</a>
+        <a class="active" href="#">Pay Bill</a>
+        <a href="payment history.html">Payment History</a>
+    </nav>
+
+    <div class="container">
+        <div class="rectangular-box">
+            <div class="pay-bill-section">
+                <h2 style="text-align: center;">PAY BILL</h2>
+
+               <label for=""> <input type="text" placeholder="Account Number"></label> 
+                <input type="text" placeholder="Amount">
+                <input type="text" placeholder="Card Number">
+                <input type="text" placeholder="Expiry Date">
+                <button>Pay Bill</button>
+            </div>
+        </div>
+    </div>
+  <script>
+    function getRandomColor() {
+    const letters = "0123456789ABCDEF";
+    let color = "#";
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+  
+  function changeHeaderColor() {
+    const colorInput = getRandomColor();
+    const element = document.getElementById("magicText"); 
+    element.style.color = colorInput;
+  }
+  
+  setInterval(changeHeaderColor, 500); 
+  </script>
+</body>
+</html>

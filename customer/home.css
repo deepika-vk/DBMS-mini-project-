@@ -1,0 +1,80 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(fre-sonneveld-q6n8nIrDQHE-unsplash.jpg);
+  background-size: cover;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+   text-align: center;
+}
+.content h1{
+    font-size: 90px;
+ color: rgb(168, 168, 171);
+}
+.content p{
+    padding: 0px 50px;
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+button{
+    background: none;
+    border:1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+button:hover{
+    color:#fff;
+    background: rgb(113, 2, 2);
+
+}
+
+nav {
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+}
+label.logo{
+    font-size: 55px;
+    font-weight:bold;
+    color:transparent;
+    padding:0 100px;
+    line-height: 80px;
+    background-image: url(https://media.giphy.com/media/xT1XGZndeDLlWvSDaU/giphy.gif);
+    background-position: center;
+    -webkit-background-clip: text;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #333;
+    font-size: large;
+}  
+a.active,a.hover{
+    background: #1b9bff;
+    transition:.5s;
+}
+.overlay{
+    background: rgba(0,0,0,.5);
+    height: 100vh;
+
+}

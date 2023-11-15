@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment history.css">
+    
+    <title>Table Page</title>
+</head>
+<body>
+    <header>
+        <label class="logo">E-BILLING SYSTEM</label>
+      </header>
+  
+      <nav>
+          <a href="Home.html">Home</a>
+          <a href="view profile.html">View Profile</a>
+          <a href="Pay bill.html">Pay Bill</a>
+          <a  class="active"href="#">Payment History</a>
+      </nav>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>UserID</th>
+                <th>Username</th>
+                <th>Amount Paid</th>
+                <th>Date & Time</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <!-- Table rows will be added here dynamically using JavaScript -->
+        </tbody>
+    </table>
+    <script src="payment history.js"></script>
+</body>
+</html>

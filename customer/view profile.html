@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="view profile.css">
+    <title>View Profile</title>
+
+</head>
+<body>
+
+    <header>
+        <label class="logo">E-BILLING SYSTEM</label>
+      </header>
+  
+      <nav>
+          <a href="Home.html">Home</a>
+          <a class="active" href="#">View Profile</a>
+          <a href="Pay bill.html">Pay Bill</a>
+          <a href="payment history.html">Payment History</a>
+      </nav>
+  
+
+    <div class="container">
+        <div class="profile-box">
+            <label for="userId">User ID:</label>
+            <input type="text" id="userId" value="123" disabled>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" value="JohnDoe" disabled>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" value="john.doe@example.com" disabled>
+
+            <label for="contactAddress">Contact Address:</label>
+            <input type="text" id="contactAddress" value="123 Main St, City" disabled>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" value="*********" disabled>
+        </div>
+    </div>
+  <script>
+    function getRandomColor() {
+    const letters = "0123456789ABCDEF";
+    let color = "#";
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+  
+  function changeHeaderColor() {
+    const colorInput = getRandomColor();
+    const element = document.getElementById("magicText"); 
+    element.style.color = colorInput;
+  }
+  
+  setInterval(changeHeaderColor, 500); 
+  </script>
+</body>
+</html>
